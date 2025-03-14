@@ -1,0 +1,29 @@
+@import 'modern-normalize/modern-normalize.css';
+
+@import './Igor/header.scss';
+@import './Igor/hero.scss';
+@import './Igor/about.scss';
+@import './Igor/how.scss';
+@import './Igor/features.scss';
+// -------------------------------------------------
+@import './Miroslav/gallery.scss';
+@import './Miroslav/atmosphere.scss';
+@import './Miroslav/reviews.scss';
+@import './Miroslav/faq.scss';
+@import './Miroslav/join.scss';
+@import './Miroslav/footer.scss';
+
+:root {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
