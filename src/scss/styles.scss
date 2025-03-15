@@ -1,17 +1,17 @@
 @import 'modern-normalize/modern-normalize.css';
 
-@import './Igor/header.scss';
-@import './Igor/hero.scss';
-@import './Igor/about.scss';
-@import './Igor/how.scss';
-@import './Igor/features.scss';
+@import '../assets/styles/Igor/header.scss';
+@import '../assets/styles/Igor/hero.scss';
+@import '../assets/styles/Igor/about.scss';
+@import '../assets/styles/Igor/how.scss';
+@import '../assets/styles/Igor/features.scss';
 // -------------------------------------------------
-@import './Miroslav/gallery.scss';
-@import './Miroslav/atmosphere.scss';
-@import './Miroslav/reviews.scss';
-@import './Miroslav/faq.scss';
-@import './Miroslav/join.scss';
-@import './Miroslav/footer.scss';
+@import '../assets/styles/Miroslav/gallery.scss';
+@import '../assets/styles/Miroslav/atmosphere.scss';
+@import '../assets/styles/Miroslav/reviews.scss';
+@import '../assets/styles/Miroslav/faq.scss';
+@import '../assets/styles/Miroslav/join.scss';
+@import '../assets/styles/Miroslav/footer.scss';
 
 @font-face {
   font-family: 'Maven Pro';
