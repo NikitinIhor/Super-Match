@@ -2,6 +2,8 @@ import { about_slider } from './js/about_slider.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   about_slider();
+});
+
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
