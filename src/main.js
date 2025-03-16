@@ -1,3 +1,9 @@
+import { about_slider } from './js/about_slider.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+  about_slider();
+});
+
 document.querySelectorAll('.faq-item').forEach(item => {
   item.addEventListener('click', () => {
     item.classList.toggle('open');

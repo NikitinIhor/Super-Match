@@ -2,26 +2,26 @@
   padding-top: 120px;
   margin-bottom: 80px;
 }
-.wrapper {
+.hero-wrapper {
   display: flex;
   flex-direction: column-reverse;
   gap: 21px;
 }
-.images {
+.hero-images {
   display: flex;
   justify-content: center;
   gap: 12px;
 }
-.image-1 {
+.hero-image-1 {
   margin-top: 58px;
   width: 86px;
   height: 177px;
 }
-.image-2 {
+.hero-image-2 {
   width: 115px;
   height: 235px;
 }
-.title {
+.hero-title {
   font-weight: 800;
   font-size: 24px;
   line-height: 130%;
@@ -31,7 +31,7 @@
   color: rgba(70, 0, 139, 1);
   margin-bottom: 20px;
 }
-.text {
+.hero-text {
   font-weight: 600;
   font-size: 20px;
   line-height: 130%;
@@ -62,16 +62,16 @@ button img {
   width: 45px;
   height: 45px;
 }
-.btns {
+.hero-btns {
   text-align: start;
 }
-.btns p:first-child {
+.hero-btns p:first-child {
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 4px;
   text-transform: uppercase;
 }
-.btns p:last-child {
+.hero-btns p:last-child {
   font-weight: 600;
   font-size: 20px;
   text-transform: uppercase;
@@ -81,30 +81,30 @@ button img {
     padding-top: 219px;
     margin-bottom: 160px;
   }
-  .wrapper {
+  .hero-wrapper {
     display: flex;
     flex-direction: row;
     gap: 58px;
   }
-  .images {
+  .hero-images {
     gap: 24px;
-    margin-left: -230px;
+    margin-left: -260px;
   }
-  .image-1 {
+  .hero-image-1 {
     margin-top: 109px;
     width: 163px;
     height: 334px;
   }
-  .image-2 {
+  .hero-image-2 {
     width: 217px;
     height: 443px;
   }
-  .title {
-    font-size: 46px;
+  .hero-title {
+    font-size: 48px;
     text-align: start;
     width: 800px;
   }
-  .text {
+  .hero-text {
     font-size: 24px;
     text-align: start;
     margin-bottom: 60px;
