@@ -1,2 +1,56 @@
 .reviews {
+  margin-bottom: 80px;
+}
+
+.reviews-title-one {
+  font-weight: 800;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $_title_color;
+  margin-bottom: 40px;
+}
+
+.swiper {
+  width: 280px;
+  height: 228px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.swiper-slide {
+  border-radius: 16px;
+  padding: 40px 36.5px;
+  width: 280px;
+  height: 228px;
+  box-shadow: 7px 7px 0 0 #5805a8;
+  background: $_icon_color;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.reviews-title {
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $_menu_color;
+  margin-bottom: 24px;
+}
+
+.reviews-text {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: $_menu_color;
+}
+
+.pink {
+  background: $_main_color_4;
 }
