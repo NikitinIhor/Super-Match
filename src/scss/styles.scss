@@ -15,11 +15,10 @@
 
 @font-face {
   font-family: 'Maven Pro';
-  src: url('/assets/fonts/MavenPro-VariableFont_wght.woff2') format('woff2');
-  font-weight: 400, 800;
+  src: url('/fonts/MavenPro-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400 800;
   font-style: normal;
 }
-
 :root {
   font-family: 'Maven Pro', sans-serif;
   font-size: 24px;
