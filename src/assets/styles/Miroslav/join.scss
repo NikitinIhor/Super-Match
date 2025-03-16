@@ -1,2 +1,61 @@
 .join {
+  width: 282px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+}
+
+.join-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.join-title {
+  font-weight: 800;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $_title_color;
+}
+
+.join-text {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.join-link {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  border: 2px solid $_icon_color;
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.join-link-img {
+  width: 60px;
+  height: 60px;
+}
+
+.join-link-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.join-link-text {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $_title_color;
+}
+
+.join-link-text-next {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $_title_color;
 }
