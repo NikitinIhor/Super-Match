@@ -1,3 +1,18 @@
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+const swiper = new Swiper('.mySwiper', {
+  spaceBetween: 40,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
 document.querySelectorAll('.faq-item').forEach(item => {
   item.addEventListener('click', () => {
     item.classList.toggle('open');
