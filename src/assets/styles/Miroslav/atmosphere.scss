@@ -1,2 +1,21 @@
 .atmosphere {
 }
+.container {
+  width: 280px;
+  margin-bottom: 80px;
+}
+.atmosphere-title {
+  font-weight: 800;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $_title-color;
+  margin-bottom: 40px;
+}
+.atmosphere-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: $_title-color;
+}
