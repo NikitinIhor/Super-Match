@@ -1,22 +1,11 @@
 import { about_slider } from './js/about_slider.js';
 import { cookies } from './js/cookies.js';
+import { reviews_slider } from './js/reviews_slider.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   about_slider();
+  reviews_slider();
   cookies();
-});
-
-import Swiper from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
-const swiper = new Swiper('.mySwiper', {
-  spaceBetween: 40,
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-  },
 });
 
 document.querySelectorAll('.faq-item').forEach(item => {

@@ -1,7 +1,6 @@
-.join {
-  width: 280px;
+.join-container {
   margin: 0 auto;
-  margin-bottom: 55px;
+  margin-bottom: 80px;
 }
 
 .join-content {
@@ -36,8 +35,8 @@
 }
 
 .join-link-img {
-  width: 60px;
-  height: 60px;
+  width: 46px;
+  height: 50px;
 }
 
 .join-link-content {
@@ -58,4 +57,14 @@
   font-size: 20px;
   text-transform: uppercase;
   color: $_title_color;
+}
+@media (min-width: 1200px) {
+  .join-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 252px;
+    padding: 12px;
+    margin: 0 auto;
+  }
 }
