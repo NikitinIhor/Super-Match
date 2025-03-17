@@ -1,5 +1,6 @@
 .atmosphere-container {
   max-width: 850px;
+  margin-bottom: 80px;
 }
 
 .atmosphere-title {
@@ -17,4 +18,18 @@
   text-align: center;
   color: $_title-color;
   margin-bottom: 80px;
+}
+
+@media (min-width: 1200px) {
+  .atmosphere-container {
+    margin-bottom: 160px;
+  }
+
+  .atmosphere-title {
+    font-size: 48px;
+  }
+
+  .atmosphere-text {
+    font-size: 24px;
+  }
 }

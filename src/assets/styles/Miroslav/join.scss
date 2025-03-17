@@ -59,6 +59,10 @@
   color: $_title_color;
 }
 @media (min-width: 1200px) {
+  .join-container {
+    margin-bottom: 160px;
+  }
+
   .join-link {
     display: flex;
     align-items: center;
@@ -66,5 +70,13 @@
     width: 252px;
     padding: 12px;
     margin: 0 auto;
+  }
+
+  .join-title {
+    font-size: 48px;
+  }
+
+  .join-text {
+    font-size: 24px;
   }
 }

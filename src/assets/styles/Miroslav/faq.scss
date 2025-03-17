@@ -55,7 +55,15 @@
 }
 
 @media (min-width: 1200px) {
+  .faq {
+    margin-bottom: 160px;
+  }
+
   .faq-item {
     width: 712px;
+  }
+
+  .faq-title-cont {
+    font-size: 48px;
   }
 }
