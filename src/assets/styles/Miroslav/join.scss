@@ -27,37 +27,44 @@
 
 .join-link {
   display: flex;
-  flex-direction: row;
-  gap: 40px;
-  border: 2px solid $_icon_color;
-  border-radius: 16px;
+  align-items: center;
+  width: 280px;
   padding: 12px;
+  gap: 21px;
+  border: 2px solid rgba(140, 23, 255, 1);
+  border-radius: 12px;
+  transition: background-color 0.4s ease, color 0.4s ease,
+    border-color 0.4s ease;
 }
 
-.join-link-img {
-  width: 46px;
-  height: 50px;
+.join-link:hover {
+  background: linear-gradient(90deg, #8c17ff 0%, #cd28d6 100%);
+  color: white;
+  border-color: white;
 }
 
-.join-link-content {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+.join-link img {
+  border: 1px solid rgb(81, 201, 38);
+  width: 45px;
+  height: 45px;
 }
-
-.join-link-text {
+.join-img {
+}
+.join-text-container {
+}
+.join-text-1 {
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
-  color: $_title_color;
+  color: $_title-color;
 }
-
-.join-link-text-next {
+.join-text-2 {
   font-weight: 600;
   font-size: 20px;
   text-transform: uppercase;
-  color: $_title_color;
+  color: $_title-color;
 }
+
 @media (min-width: 1200px) {
   .join-container {
     margin-bottom: 160px;
