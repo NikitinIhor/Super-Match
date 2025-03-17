@@ -1,3 +1,7 @@
+.atmosphere-container {
+  max-width: 850px;
+}
+
 .atmosphere-title {
   font-weight: 800;
   font-size: 24px;
@@ -12,4 +16,5 @@
   line-height: 140%;
   text-align: center;
   color: $_title-color;
+  margin-bottom: 80px;
 }

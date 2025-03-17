@@ -1,8 +1,8 @@
 .footer {
   margin: 0 auto;
-  padding: 40px 44px;
   background-color: $_footer_color;
-  width: 322px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .footer-nav-list {
@@ -26,4 +26,18 @@
   font-size: 16px;
   text-align: center;
   color: $_menu_color;
+}
+
+@media (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 76px;
+    align-items: last baseline;
+  }
+
+  .footer-nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

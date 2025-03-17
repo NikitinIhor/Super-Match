@@ -53,3 +53,9 @@
 .faq-arrow.open svg {
   transform: rotate(180deg);
 }
+
+@media (min-width: 1200px) {
+  .faq-item {
+    width: 712px;
+  }
+}
