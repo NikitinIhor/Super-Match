@@ -79,11 +79,13 @@
 // -----------------------------------------
 .cookies {
   margin: 0 auto;
-  position: absolute;
-  top: 256px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
   padding: 40px 20px;
   background-color: rgba(140, 23, 255, 1);
-  z-index: 999;
+  z-index: 9999;
 }
 .cookies-text {
   font-weight: 600;
@@ -132,6 +134,7 @@
   transition: background-color 0.4s ease, color 0.4s ease,
     border-color 0.4s ease;
 }
+
 .cookies-decline:hover {
   background: linear-gradient(90deg, #8c17ff 0%, #cd28d6 100%);
   color: white;
@@ -176,7 +179,6 @@
     width: 252px;
   }
   .cookies {
-    top: 500px;
     padding: 60px 189px;
   }
   .cookies-text {

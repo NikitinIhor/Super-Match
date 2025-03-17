@@ -1,27 +1,40 @@
-// export const cookies = () => {
-//   window.addEventListener('load', () => {
-//     const accept = localStorage.getItem('accept');
-//     const cookies = document.querySelector('.cookies');
-//     const accept_cookies = document.querySelector('#accept-cookies');
-//     const decline_cookies = document.querySelector('#decline-cookies');
+export const cookies = () => {
+  const cookies = document.querySelector('.cookies');
+  const acceptButton = document.getElementById('accept-cookies');
+  const rejectButton = document.getElementById('decline-cookies');
+  const allLinks = document.querySelectorAll('.header-list');
 
-//     if (accept) {
-//       cookies.style.display = 'none';
-//       document.body.classList.remove('no-scroll');
-//     } else {
-//       document.body.classList.add('no-scroll');
-//     }
+  if (!cookies) {
+    return;
+  }
 
-//     accept_cookies.addEventListener('click', () => {
-//       localStorage.setItem('accept', 'true');
-//       document.getElementById('cookies-banner').style.display = 'none';
-//       document.body.classList.remove('no-scroll');
-//     });
+  if (localStorage.getItem('accepted') !== 'true') {
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.cursor = 'not-allowed';
+    cookies.style.display = 'block';
 
-//     document.getElementById('decline-cookies').addEventListener('click', () => {
-//       localStorage.setItem('cookiesAccepted', 'false');
-//       document.getElementById('cookies-banner').style.display = 'none';
-//       document.body.classList.remove('no-scroll');
-//     });
-//   });
-// };
+    allLinks.forEach(element => {
+      element.style.pointerEvents = 'none';
+    });
+  } else {
+    cookies.style.display = 'none';
+  }
+
+  function handleCookieChoice(accepted) {
+    localStorage.setItem('accepted', accepted);
+    cookies.style.display = 'none';
+
+    if (accepted === 'true') {
+      document.documentElement.style.overflow = '';
+      document.body.style.cursor = '';
+    }
+  }
+
+  if (acceptButton) {
+    acceptButton.addEventListener('click', () => handleCookieChoice('true'));
+  }
+
+  if (rejectButton) {
+    rejectButton.addEventListener('click', () => handleCookieChoice('true'));
+  }
+};

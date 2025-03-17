@@ -1,7 +1,9 @@
 import { about_slider } from './js/about_slider.js';
+import { cookies } from './js/cookies.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   about_slider();
+  cookies();
 });
 
 document.querySelectorAll('.faq-item').forEach(item => {
