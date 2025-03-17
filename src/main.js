@@ -1,11 +1,12 @@
 import { about_slider } from './js/about_slider.js';
+import { cookies } from './js/cookies.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   about_slider();
+  cookies();
 });
 
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
