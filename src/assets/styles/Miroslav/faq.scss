@@ -50,19 +50,14 @@
   font-weight: 400;
   font-size: 16px;
   color: $_menu-color;
-  display: none;
-  overflow: hidden;
   max-height: 0;
-  transition: max-height 0.3s ease;
-}
-
-.faq-item.open .faq-text {
-  display: block;
-  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.4s ease; /* Додаємо плавний перехід для висоти */
+  padding-top: 20px;
 }
 
 .faq-arrow {
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
 .faq-item.open .faq-arrow {
