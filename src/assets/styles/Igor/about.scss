@@ -121,6 +121,11 @@
     box-shadow: 7px 7px 0px 0px rgba(88, 5, 168, 1);
     height: 160px;
   }
+  .column-about-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .column .about-item p {
     width: 250px;
     margin: 0 auto;
