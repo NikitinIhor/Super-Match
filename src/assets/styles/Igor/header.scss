@@ -49,7 +49,6 @@
   visibility: visible;
   left: 0;
 }
-
 .menu__btn {
   display: flex;
   align-items: center;
@@ -62,7 +61,6 @@
   cursor: pointer;
   z-index: 10;
 }
-
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -81,7 +79,6 @@
   content: '';
   top: 8px;
 }
-
 .menu__box {
   position: fixed;
   visibility: hidden;

@@ -1,2 +1,54 @@
 .how {
+  margin-bottom: 80px;
+}
+.how-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.how-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.how-item {
+  padding: 32px 20px;
+  background: linear-gradient(90deg, #8c17ff 0%, #cd28d6 100%);
+  box-shadow: 7px 7px 0px 0px rgba(88, 5, 168, 1);
+  border-radius: 20px;
+  height: 176px;
+}
+.how-item h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 8px;
+}
+.how-item p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: white;
+}
+@media (min-width: 1200px) {
+  .how {
+    margin-bottom: 160px;
+  }
+  .how-title {
+    font-size: 48px;
+  }
+  .how-item {
+    padding: 20px;
+    width: 712px;
+    height: 100px;
+  }
 }
