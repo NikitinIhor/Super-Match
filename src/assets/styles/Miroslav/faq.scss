@@ -18,7 +18,7 @@
 
 .faq-item {
   border-radius: 16px;
-  padding: 10px;
+  padding: 20px;
   width: 280px;
   box-shadow: 7px 7px 0 0 #5805a8;
   background: linear-gradient(90deg, #8c17ff 0%, #cd28d6 100%);
@@ -39,18 +39,33 @@
   color: $_menu-color;
 }
 
+.faq-img {
+  width: 20px;
+  height: 20px;
+  color: $_menu-color;
+  object-fit: cover;
+}
+
 .faq-text {
   font-weight: 400;
   font-size: 16px;
   color: $_menu-color;
   display: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
 }
 
-.faq-arrow svg {
+.faq-item.open .faq-text {
+  display: block;
+  max-height: 500px;
+}
+
+.faq-arrow {
   transition: transform 0.3s ease;
 }
 
-.faq-arrow.open svg {
+.faq-item.open .faq-arrow {
   transform: rotate(180deg);
 }
 
@@ -61,6 +76,20 @@
 
   .faq-item {
     width: 712px;
+    padding: 20px 34px;
+  }
+
+  .faq-title {
+    font-weight: 24px;
+  }
+
+  .faq-text {
+    font-size: 20px;
+  }
+
+  .faq-img {
+    width: 35px;
+    height: 35px;
   }
 
   .faq-title-cont {
