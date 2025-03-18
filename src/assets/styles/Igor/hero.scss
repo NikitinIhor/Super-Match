@@ -78,14 +78,13 @@
 }
 // -----------------------------------------
 .cookies {
-  margin: 0 auto;
   position: fixed;
   width: 100%;
   left: 0;
   bottom: 0;
   padding: 40px 20px;
   background-color: rgba(140, 23, 255, 1);
-  z-index: 9999;
+  z-index: 1001;
 }
 .cookies-text {
   font-weight: 600;
@@ -200,7 +199,7 @@
   .cookies-accept,
   .cookies-decline {
     padding: 26px 73px;
-    width: 344px;
+    width: 360px;
     height: 80px;
     font-size: 23px;
   }
