@@ -1,6 +1,6 @@
-export function about_slider() {
-  const list = document.querySelector('.about-list');
-  const dots = document.querySelectorAll('.about-dot');
+export function features_slider() {
+  const list = document.querySelector('.features-slider-list');
+  const dots = document.querySelectorAll('.features-dot');
   const slideWidth = 270;
   const gap = 40;
   let index = 0;

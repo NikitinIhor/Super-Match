@@ -38,7 +38,7 @@
   object-fit: cover;
 }
 
-button {
+.gallery-button {
   display: none;
   position: absolute;
   top: 50%;
@@ -51,10 +51,10 @@ button {
   height: 51px;
 }
 
-button.prev-btn {
+.gallery-button.prev-btn {
   left: 100px;
 }
-button.next-btn {
+.gallery-button.next-btn {
   right: 10px;
 }
 
