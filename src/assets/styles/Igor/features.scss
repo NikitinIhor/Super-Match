@@ -12,7 +12,7 @@
 }
 .features-slider-container {
   position: relative;
-  width: 100%;
+  width: calc(100% + 20px);
   overflow: hidden;
 }
 .features-slider-list {
@@ -20,13 +20,13 @@
   align-items: center;
   transition: transform 0.3s ease-in-out;
   flex-wrap: nowrap;
-  gap: 40px;
+  gap: 60px;
 }
 .features-list-2 {
   display: none;
 }
 .features-slider-item {
-  min-width: 270px;
+  min-width: 280px;
   height: 164px;
   padding: 20px;
   text-align: center;

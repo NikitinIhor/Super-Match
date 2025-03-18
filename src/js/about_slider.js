@@ -1,8 +1,8 @@
 export function about_slider() {
   const list = document.querySelector('.about-list');
   const dots = document.querySelectorAll('.about-dot');
-  const slideWidth = 270;
-  const gap = 40;
+  const slideWidth = 280;
+  const gap = 60;
   let index = 0;
   const totalSlides = dots.length;
 
