@@ -9,17 +9,7 @@ export const cookies = () => {
     return;
   }
 
-  if (localStorage.getItem('accepted') !== 'true') {
-    document.documentElement.style.overflow = 'hidden';
-    document.body.style.cursor = 'not-allowed';
-    cookies.style.display = 'block';
-    burger.style.pointerEvents = 'none';
-
-    allLinks.forEach(element => {
-      element.style.pointerEvents = 'none';
-    });
-  } else {
-    cookies.style.display = 'none';
+  function active() {
     document.documentElement.style.overflow = 'auto';
     document.body.style.cursor = 'default';
     burger.style.pointerEvents = 'auto';
@@ -29,14 +19,28 @@ export const cookies = () => {
     });
   }
 
+  function disable() {
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.cursor = 'not-allowed';
+    cookies.style.display = 'block';
+    burger.style.pointerEvents = 'none';
+
+    allLinks.forEach(element => {
+      element.style.pointerEvents = 'none';
+    });
+  }
+
+  if (localStorage.getItem('accepted') !== 'true') {
+    disable();
+  } else {
+    cookies.style.display = 'none';
+    active();
+  }
+
   function handleCookieChoice(accepted) {
     localStorage.setItem('accepted', accepted);
     cookies.style.display = 'none';
-
-    if (accepted === 'true') {
-      document.documentElement.style.overflow = '';
-      document.body.style.cursor = '';
-    }
+    active();
   }
 
   if (acceptButton) {
