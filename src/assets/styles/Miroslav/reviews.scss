@@ -12,11 +12,10 @@
   letter-spacing: 0;
 }
 
-.reviews-slider-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
+// .reviews-slider-container {
+//   position: relative;
+//   width: 100%;
+// }
 
 .reviews-list {
   display: flex;
@@ -31,12 +30,20 @@
 }
 
 .review-item {
+  position: relative;
   border-radius: 16px;
   padding: 20px;
   min-width: 270px;
   height: 228px;
   box-shadow: 7px 7px 0 0 #5805a8;
   background: $_icon-color;
+}
+
+.review-icon {
+  position: absolute;
+  top: -17px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .pink {
