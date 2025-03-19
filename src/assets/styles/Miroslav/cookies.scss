@@ -52,11 +52,29 @@
   line-height: 140%;
   color: $_title_color;
   margin-bottom: 40px;
-  max-width: 280px;
 }
 
 .cookies-item-link {
   word-wrap: break-word;
   word-break: break-word;
   text-decoration: underline;
+}
+
+@media (min-width: 1200px) {
+  .cookies-container {
+    max-width: 1080px;
+  }
+
+  .cookies-title {
+    font-size: 24px;
+  }
+
+  .cookies-text-t {
+    font-size: 20px;
+  }
+
+  .cookies-img-elipse {
+    width: 12px;
+    height: 12px;
+  }
 }
