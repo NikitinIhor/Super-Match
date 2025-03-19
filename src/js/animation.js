@@ -4,6 +4,7 @@ export const animation = () => {
   const images = document.querySelectorAll('.hero-images img');
   const howList = document.querySelectorAll('.how-item');
   const faqList = document.querySelectorAll('.faq-item');
+  const aboutItems = document.querySelectorAll('.animation-item');
 
   const observer = new IntersectionObserver(
     (entries, observer) => {
@@ -22,4 +23,5 @@ export const animation = () => {
   faqList.forEach(item => observer.observe(item));
   titles.forEach(section => observer.observe(section));
   texts.forEach(section => observer.observe(section));
+  aboutItems.forEach(item => observer.observe(item));
 };

@@ -38,3 +38,31 @@
   opacity: 1;
   transform: translateX(0);
 }
+
+.animation-item {
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+.animation-item.visible {
+  opacity: 1;
+}
+.animation-item h3,
+.animation-item p {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.5s ease, transform 2s ease;
+}
+.animation-item.visible h3,
+.animation-item.visible p {
+  opacity: 1;
+  transform: translateY(0);
+}
+.column-animation-item {
+  transition-delay: 0.2s;
+}
+.column-animation-item:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.column-animation-item:nth-child(3) {
+  transition-delay: 0.6s;
+}
