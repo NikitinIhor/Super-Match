@@ -44,21 +44,25 @@
 
 .gallery-button {
   display: none;
-  top: 50%;
-  transform: translateY(-50%);
   border: 1px solid $_icon-color;
   border-radius: 12px;
   padding: 13px 14px;
   width: 53px;
   height: 51px;
-  transition: background-color 0.4s ease, border-color 0.4s ease,
+  fill: $_icon-color;
+  transition: background-color 0.4s ease, border-color 0.4s ease, fill 0.4s ease,
     opacity 0.4s ease;
 }
 
 .gallery-button:hover {
-  background: linear-gradient(90deg, #a455f3 0%, #cf6bd4 100%);
+  background: linear-gradient(90deg, #8c17ff 0%, #cd28d6 100%);
   border-color: white;
+  fill: white;
   opacity: 0.9;
+}
+
+.gallery-button:active {
+  background: #46008b;
 }
 
 .gallery-button.prev-btn {
@@ -92,6 +96,8 @@
     max-width: 205px;
   }
   .gallery-button {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
