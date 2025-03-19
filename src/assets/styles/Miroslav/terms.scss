@@ -11,8 +11,16 @@
   font-size: 24px;
   text-transform: uppercase;
   color: $_icon_color;
+  fill: $_icon_color;
   margin-bottom: 80px;
+  transition: color 0.4s ease, fill 0.4s ease;
 }
+
+.terms-link:hover {
+  color: #46008b;
+  fill: #46008b;
+}
+
 .terms-img-title {
   width: 20px;
   height: 20px;
@@ -47,6 +55,11 @@
 }
 .terms-text-2 {
   text-decoration: underline;
+  transition: color 0.4s ease;
+}
+
+.terms-text-2:hover {
+  color: #8c17ff;
 }
 
 @media (min-width: 1200px) {
