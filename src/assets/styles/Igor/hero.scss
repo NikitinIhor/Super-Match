@@ -62,6 +62,29 @@
   width: 45px;
   height: 45px;
 }
+@keyframes pulse-opacity-background {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    background-color: transparent;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+    background-color: rgba(140, 23, 255, 0.8);
+    color: white;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    background-color: transparent;
+  }
+}
+.google-play {
+  animation: pulse-opacity-background 1.5s infinite ease-in-out;
+  animation-delay: 1s;
+}
+
 .hero-btns {
   text-align: start;
 }
