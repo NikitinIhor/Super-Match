@@ -12,7 +12,14 @@
   font-size: 24px;
   text-transform: uppercase;
   color: $_icon_color;
+  fill: $_icon_color;
   margin-bottom: 80px;
+  transition: color 0.4s ease, fill 0.4s ease;
+}
+
+.cookies-link:hover {
+  color: #46008b;
+  fill: #46008b;
 }
 
 .cookies-img-title {
@@ -58,6 +65,11 @@
   word-wrap: break-word;
   word-break: break-word;
   text-decoration: underline;
+  transition: color 0.4s ease;
+}
+
+.cookies-item-link:hover {
+  color: #8c17ff;
 }
 
 @media (min-width: 1200px) {
