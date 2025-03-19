@@ -1,7 +1,8 @@
-.privacy-container {
+.cookies-container {
   padding-top: 80px;
 }
-.privacy-link {
+
+.cookies-link {
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -14,12 +15,13 @@
   margin-bottom: 80px;
 }
 
-.privacy-img-title {
+.cookies-img-title {
   width: 20px;
   height: 20px;
   object-fit: cover;
 }
-.privacy-title {
+
+.cookies-title {
   font-weight: 600;
   font-size: 20px;
   text-transform: uppercase;
@@ -27,49 +29,34 @@
   margin-bottom: 20px;
 }
 
-.margin {
-  margin-bottom: 40px;
-}
-
-.privacy-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 140%;
-  color: $_title_color;
-  margin-bottom: 40px;
-}
-
-.privacy-text-2 {
-  text-decoration: underline;
-}
-
-.privacy-item {
+.cookies-item-img {
   display: flex;
   flex-direction: row;
   align-items: first baseline;
   gap: 12px;
 }
-.privacy-img {
+
+.cookies-img-elipse {
   width: 8px;
   height: 8px;
   object-fit: cover;
 }
 
-@media (min-width: 1200px) {
-  .privacy-container {
-    max-width: 1080px;
-  }
+.cookies-item {
+  margin-left: 24px;
+}
 
-  .privacy-title {
-    font-size: 24px;
-  }
+.cookies-text-t {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: $_title_color;
+  margin-bottom: 40px;
+  max-width: 280px;
+}
 
-  .privacy-text {
-    font-size: 20px;
-  }
-
-  .privacy-img {
-    width: 12px;
-    height: 12px;
-  }
+.cookies-item-link {
+  word-wrap: break-word;
+  word-break: break-word;
+  text-decoration: underline;
 }

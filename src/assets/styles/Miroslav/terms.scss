@@ -1,7 +1,7 @@
-.privacy-container {
+.terms-container {
   padding-top: 80px;
 }
-.privacy-link {
+.terms-link {
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -13,25 +13,20 @@
   color: $_icon_color;
   margin-bottom: 80px;
 }
-
-.privacy-img-title {
+.terms-img-title {
   width: 20px;
   height: 20px;
   object-fit: cover;
 }
-.privacy-title {
+
+.terms-title {
   font-weight: 600;
   font-size: 20px;
   text-transform: uppercase;
   color: $_title_color;
   margin-bottom: 20px;
 }
-
-.margin {
-  margin-bottom: 40px;
-}
-
-.privacy-text {
+.terms-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
@@ -39,36 +34,35 @@
   margin-bottom: 40px;
 }
 
-.privacy-text-2 {
-  text-decoration: underline;
-}
-
-.privacy-item {
+.terms-item {
   display: flex;
   flex-direction: row;
   align-items: first baseline;
   gap: 12px;
 }
-.privacy-img {
+.terms-img {
   width: 8px;
   height: 8px;
   object-fit: cover;
 }
+.terms-text-2 {
+  text-decoration: underline;
+}
 
 @media (min-width: 1200px) {
-  .privacy-container {
+  .terms-container {
     max-width: 1080px;
   }
 
-  .privacy-title {
+  .terms-title {
     font-size: 24px;
   }
 
-  .privacy-text {
+  .terms-text {
     font-size: 20px;
   }
 
-  .privacy-img {
+  .terms-img {
     width: 12px;
     height: 12px;
   }
