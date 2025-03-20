@@ -18,17 +18,16 @@
   margin-bottom: 40px;
   letter-spacing: 0;
 }
-.slider-container {
+.about-slider-container {
   position: relative;
   width: 100%;
-  overflow: hidden;
 }
 .about-list {
   display: flex;
   align-items: center;
   transition: transform 0.3s ease-in-out;
   flex-wrap: nowrap;
-  gap: 60px;
+  gap: 80px;
 }
 .about-list-2 {
   display: none;
