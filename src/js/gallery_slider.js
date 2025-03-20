@@ -20,6 +20,7 @@ export function gallery_slider() {
       updateGallery();
     }
   });
+
   nextBtn.addEventListener('click', () => {
     if (index < images.length - imagePerView) {
       index++;
@@ -27,22 +28,33 @@ export function gallery_slider() {
     }
   });
 
-  let startX, endX;
+  let startX, endX, startY, endY;
 
   slider.addEventListener('touchstart', e => {
     startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+    e.preventDefault();
   });
+
   slider.addEventListener('touchend', e => {
     endX = e.changedTouches[0].clientX;
+    endY = e.changedTouches[0].clientY;
     handleSwipe();
   });
+
   function handleSwipe() {
-    if (endX < startX) {
-      index = (index + 1) % totalImages;
-    } else if (endX > startX) {
-      index = (index - 1 + totalImages) % totalImages;
+    const horizontalDistance = endX - startX;
+    const verticalDistance = endY - startY;
+
+    if (Math.abs(horizontalDistance) > Math.abs(verticalDistance)) {
+      if (horizontalDistance < 0) {
+        index = (index + 1) % totalImages;
+      } else if (horizontalDistance > 0) {
+        index = (index - 1 + totalImages) % totalImages;
+      }
+      updateGallery();
     }
-    updateGallery();
   }
+
   updateGallery();
 }
