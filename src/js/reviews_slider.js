@@ -1,8 +1,8 @@
 export function reviews_slider() {
   const list = document.querySelector('.reviews-list');
   const dots = document.querySelectorAll('.review-dot');
-  const slideWidth = 270;
-  const gap = 40;
+  const slideWidth = 280;
+  const gap = 60;
   let index = 0;
   const totalSlides = dots.length;
 
