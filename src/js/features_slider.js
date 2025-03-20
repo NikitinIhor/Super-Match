@@ -18,32 +18,24 @@ export function features_slider() {
     });
   });
 
-  let touchStartX, touchEndX, touchStartY, touchEndY;
+  let touchStartX, touchEndX;
 
-  list.addEventListener('touchstart', e => {
-    touchStartX = e.touches[0].clientX;
-    touchStartY = e.touches[0].clientY;
-    e.preventDefault();
-  });
-
+  list.addEventListener(
+    'touchstart',
+    e => (touchStartX = e.touches[0].clientX)
+  );
   list.addEventListener('touchend', e => {
     touchEndX = e.changedTouches[0].clientX;
-    touchEndY = e.changedTouches[0].clientY;
     handleSwipe();
   });
 
   function handleSwipe() {
-    const horizontalDistance = touchEndX - touchStartX;
-    const verticalDistance = touchEndY - touchStartY;
-
-    if (Math.abs(horizontalDistance) > Math.abs(verticalDistance)) {
-      if (horizontalDistance < 0) {
-        index = (index + 1) % totalSlides;
-      } else if (horizontalDistance > 0) {
-        index = (index - 1 + totalSlides) % totalSlides;
-      }
-      updateSlider();
+    if (touchEndX < touchStartX) {
+      index = (index + 1) % totalSlides;
+    } else if (touchEndX > touchStartX) {
+      index = (index - 1 + totalSlides) % totalSlides;
     }
+    updateSlider();
   }
 
   updateSlider();
