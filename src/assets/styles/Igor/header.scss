@@ -126,7 +126,7 @@
 
 .menu__item:hover,
 .menu__item:focus {
-  color: rgba(198, 33, 235, 1);
+  color: rgb(203, 200, 200);
 }
 
 #menu__toggle:checked ~ .menu__box .menu__item {
@@ -170,7 +170,7 @@
     transition: color 0.4s ease;
   }
   .header-list li:hover {
-    color: rgba(198, 33, 235, 1);
+    color: #290665;
   }
 
   .hamburger-menu {
