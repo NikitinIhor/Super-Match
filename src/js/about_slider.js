@@ -23,7 +23,20 @@ export function about_slider() {
   list.addEventListener('touchstart', e => {
     touchStartX = e.touches[0].clientX;
     touchStartY = e.touches[0].clientY;
+
     e.preventDefault();
+  });
+
+  list.addEventListener('touchmove', e => {
+    touchEndX = e.touches[0].clientX;
+    touchEndY = e.touches[0].clientY;
+
+    const horizontalDistance = Math.abs(touchEndX - touchStartX);
+    const verticalDistance = Math.abs(touchEndY - touchStartY);
+
+    if (horizontalDistance > verticalDistance) {
+      e.preventDefault();
+    }
   });
 
   list.addEventListener('touchend', e => {
