@@ -22,7 +22,7 @@ export function gallery_slider() {
   });
 
   nextBtn.addEventListener('click', () => {
-    if (index < images.length - imagePerView) {
+    if (index < totalImages - imagePerView) {
       index++;
       updateGallery();
     }
