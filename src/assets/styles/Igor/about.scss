@@ -29,6 +29,7 @@
   transition: transform 0.3s ease-in-out;
   flex-wrap: nowrap;
   gap: 60px;
+  overflow-y: hidden;
 }
 .about-list-2 {
   display: none;
