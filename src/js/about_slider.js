@@ -23,7 +23,6 @@ export function about_slider() {
   list.addEventListener('touchstart', e => {
     touchStartX = e.touches[0].clientX;
     touchStartY = e.touches[0].clientY;
-
     e.preventDefault();
   });
 
