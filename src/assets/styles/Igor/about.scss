@@ -20,7 +20,8 @@
 }
 .about-slider-container {
   position: relative;
-  width: 100%;
+  width: calc(100% + 10px);
+  overflow: hidden;
 }
 .about-list {
   display: flex;

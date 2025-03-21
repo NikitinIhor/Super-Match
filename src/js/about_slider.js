@@ -40,7 +40,7 @@ export function about_slider() {
       horizontalDistance > swipeThreshold
     ) {
       isSwipingHorizontal = true;
-      e.preventDefault();
+      // e.preventDefault();
     } else {
       isSwipingHorizontal = false;
     }
