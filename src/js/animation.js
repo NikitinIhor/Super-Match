@@ -5,6 +5,7 @@ export const animation = () => {
   const howList = document.querySelectorAll('.how-item');
   const faqList = document.querySelectorAll('.faq-item');
   const aboutItems = document.querySelectorAll('.animation-item');
+  const buttons = document.querySelectorAll('.animation-button');
 
   const observer = new IntersectionObserver(
     (entries, observer) => {
@@ -19,6 +20,7 @@ export const animation = () => {
   );
 
   images.forEach(image => observer.observe(image));
+  buttons.forEach(button => observer.observe(button));
   howList.forEach(item => observer.observe(item));
   faqList.forEach(item => observer.observe(item));
   titles.forEach(section => observer.observe(section));

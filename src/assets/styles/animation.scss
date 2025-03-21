@@ -19,6 +19,17 @@
   transform: translateY(0);
 }
 
+.animation-button {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1.5s ease-out, transform 0.6s ease-out;
+  transition-delay: 0.6s;
+}
+.animation-button.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .google-play {
   animation: pulse 2s infinite ease-in-out;
 }

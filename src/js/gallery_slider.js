@@ -20,29 +20,52 @@ export function gallery_slider() {
       updateGallery();
     }
   });
+
   nextBtn.addEventListener('click', () => {
-    if (index < images.length - imagePerView) {
+    if (index < totalImages - imagePerView) {
       index++;
       updateGallery();
     }
   });
 
-  let startX, endX;
+  let touchStartX, touchEndX, touchStartY, touchEndY;
+  let isSwipingHorizontal = false;
+  const swipeThreshold = 30;
 
   slider.addEventListener('touchstart', e => {
-    startX = e.touches[0].clientX;
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    isSwipingHorizontal = false;
   });
-  slider.addEventListener('touchend', e => {
-    endX = e.changedTouches[0].clientX;
-    handleSwipe();
-  });
-  function handleSwipe() {
-    if (endX < startX) {
-      index = (index + 1) % totalImages;
-    } else if (endX > startX) {
-      index = (index - 1 + totalImages) % totalImages;
+
+  slider.addEventListener('touchmove', e => {
+    touchEndX = e.touches[0].clientX;
+    touchEndY = e.touches[0].clientY;
+
+    const horizontalDistance = Math.abs(touchEndX - touchStartX);
+    const verticalDistance = Math.abs(touchEndY - touchStartY);
+
+    if (
+      horizontalDistance > verticalDistance &&
+      horizontalDistance > swipeThreshold
+    ) {
+      isSwipingHorizontal = true;
+      e.preventDefault();
+    } else {
+      isSwipingHorizontal = false;
     }
-    updateGallery();
-  }
+  });
+
+  slider.addEventListener('touchend', e => {
+    if (isSwipingHorizontal) {
+      if (touchEndX < touchStartX) {
+        index = (index + 1) % totalImages;
+      } else if (touchEndX > touchStartX) {
+        index = (index - 1 + totalImages) % totalImages;
+      }
+      updateGallery();
+    }
+  });
+
   updateGallery();
 }

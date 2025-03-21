@@ -42,6 +42,7 @@
   margin-bottom: 20px;
 }
 .google-play {
+  background-color: white;
   display: flex;
   align-items: center;
   width: 280px;
@@ -83,7 +84,7 @@
   width: 100%;
   left: 0;
   bottom: 0;
-  padding: 40px 20px;
+  padding: 40px 0;
   background-color: rgba(140, 23, 255, 1);
   z-index: 1001;
 }
@@ -136,8 +137,8 @@
 }
 
 .cookies-decline:hover {
-  background: rgba(198, 33, 235, 1);
-  border-color: white;
+  background: white;
+  color: rgba(28, 28, 28, 1);
 }
 // -----------------------------------------
 @media (min-width: 1200px) {

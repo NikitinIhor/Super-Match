@@ -38,18 +38,25 @@
 #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
 }
+
 #menu__toggle:checked ~ .menu__btn > span::before {
   top: 0;
   transform: rotate(0);
 }
+
 #menu__toggle:checked ~ .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
 }
+
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
-  left: 0;
+  top: 0;
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
+
 .menu__btn {
   display: flex;
   align-items: center;
@@ -62,6 +69,7 @@
   cursor: pointer;
   z-index: 10;
 }
+
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -72,31 +80,37 @@
   background-color: white;
   transition-duration: 0.25s;
 }
+
 .menu__btn > span::before {
   content: '';
   top: -8px;
 }
+
 .menu__btn > span::after {
   content: '';
   top: 8px;
 }
+
 .menu__box {
   position: fixed;
   visibility: hidden;
-  top: 0;
-  right: -100%;
+  top: -100%;
+  left: 0;
   width: 100%;
   height: 100vh;
   padding: 80px 0;
   background: linear-gradient(90deg, #8c17ff 0%, #cd28d6 100%);
-  transition-duration: 0.25s;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
+
 .menu_list {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
 }
+
 .menu__item {
   margin-bottom: 40px;
   text-transform: uppercase;
@@ -106,11 +120,21 @@
   text-decoration: none;
   transition-duration: 0.25s;
   cursor: pointer;
-  transition: color 0.4s ease;
+  transform: translateY(-30px);
+  transition: transform 0.4s ease, color 0.4s ease;
 }
+
 .menu__item:hover,
 .menu__item:focus {
   color: rgb(203, 200, 200);
+}
+
+#menu__toggle:checked ~ .menu__box .menu__item {
+  transform: translateY(0);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media (min-width: 1200px) {
@@ -146,7 +170,7 @@
     transition: color 0.4s ease;
   }
   .header-list li:hover {
-    color: rgb(203, 200, 200);
+    color: #290665;
   }
 
   .hamburger-menu {

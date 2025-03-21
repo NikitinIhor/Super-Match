@@ -13,6 +13,7 @@ export const cookies = () => {
     document.documentElement.style.overflow = 'auto';
     document.body.style.cursor = 'default';
     burger.style.pointerEvents = 'auto';
+    document.documentElement.classList.remove('scroll-lock');
 
     allLinks.forEach(element => {
       element.style.pointerEvents = 'auto';
@@ -24,6 +25,7 @@ export const cookies = () => {
     document.body.style.cursor = 'not-allowed';
     cookies.style.display = 'block';
     burger.style.pointerEvents = 'none';
+    document.documentElement.classList.add('scroll-lock');
 
     allLinks.forEach(element => {
       element.style.pointerEvents = 'none';

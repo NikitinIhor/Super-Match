@@ -17,6 +17,14 @@ html {
   }
 }
 
+html.scroll-lock {
+  padding-right: 15px;
+}
+body {
+  overflow: hidden;
+  height: 100%;
+}
+
 html,
 body {
   overflow-x: hidden;
